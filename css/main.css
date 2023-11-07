@@ -82,6 +82,7 @@ body {
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hamburger-menu input {
@@ -173,20 +174,37 @@ h1 {
     padding-top: 3rem;
     color: white;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
 }
 
 .wrapper1 {
+    margin-left: 22rem;
+    margin-right: 22rem;
+    margin-top: 10rem;
 
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 4rem;
+}
+
 .plantstudio {
-    width: 20%;
-    padding-top: 10rem;
+    width: 300px;
+    float: left;
+    padding-right: 10px;
 }
 
 
 .pv1 {
-    float: left;
+    padding-bottom: 5rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 70px;
 }
 
 .content-table {
@@ -211,4 +229,40 @@ h1 {
 
 .content-table tbody tr {
     border: 1px solid #222;
+}
+
+.contactmargin {
+    margin-left: 4rem;
+}
+
+.contactus{
+    margin-left: 22rem; 
+    margin-top: 10rem;
+}
+
+.contactbox {
+    font-size: 18px;
+}
+
+.contactbutton {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    color:#ffffff;
+    background-color:#333;
+}
+
+footer {
+    padding-bottom: 30px;
+    padding-top: 50px;
+
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
 }
