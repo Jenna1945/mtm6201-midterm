@@ -363,3 +363,7 @@ h3 {
     background-color: black;
     color: #ffffff;
   }
+
+  .menuopen a {
+    text-decoration: none;
+  }
