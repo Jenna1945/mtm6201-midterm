@@ -26,120 +26,11 @@ time, mark, audio, video {
 
 /* --------------------------------------------------------------- */
 
-
-/*:root{
-    --bar-width: 45px;
-    --bar-height: 5px;
-    --hamburger-gap: 6px;
-    --foreground: white;
-    --background: #333;
-    --hamburger-margin: 5px;
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height:calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
-
-.hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: absolute;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
-    z-index: 2;
-    cursor: pointer;
-    margin-top: 38px;
-    margin-left: 10px;
-}
-
-.hamburger-menu:has(input:checked) {
-    --foreground: #333;
-    --background: #333;
-}
-
-.hamburger-menu:has(input:focus-visible)::before,
-.hamburger-menu:has(input:focus-visible)::after,
-.hamburger-menu input:focus-visible {
-    border: 1px solid var(--background);
-    box-shadow: 0 0 0 1px var(--foreground);
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-    content:"";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--foreground);
-    border-radius: 9999px;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing), rotate
-    var(--animation-timing), translate var(--animation-timing),
-    background-color var(--animation-timing);
-}
-
-body {
-    background-image: url(../images/bg-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.hamburger-menu input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-}
-
-.hamburger-menu:has(input:checked)::before{
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-}
-
-.hamburger-menu:has(input:checked)::after{
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-} 
-
-.hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
-}
-
-.sidebar {
-    transition: translate var(--animation-timing);
-    translate: -100%;
-    padding: 0.5rem 1rem;
-    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: var(--foreground);
-    color: var(--background);
-    max-width: 10rem;
-}
-
-.hamburger-menu:has(input:checked) + .sidebar {
-    translate: 0;
-}
-
-
-@media screen and (min-width:760px){
-    .hamburger-menu::before,
-    .hamburger-menu::after{
-        display: none;
+@media (max-width: 780px) {
+    .imgshowcase {
+        grid-template-columns: 1fr;
     }
-    .sidebar{
-        translate: 0;
-        background-color: #333;
-        
-    }
-
-}*/
+}
 
 body {
     background-image: url(../images/bg-img.jpg);
@@ -172,8 +63,6 @@ li {
     padding-left: 40px;
     padding-right: 40px;
     font-size: 17px;
-    /* border-left: 1px solid rgb(255, 255, 255); */
-    
 } 
 
 .line{
@@ -283,61 +172,27 @@ h1 {
     border: 1px solid #222;
 }
 
-/* .contactmargin {
-    margin-left: 4rem;
-} */
+/*--------------------footer------------------*/
 
-/*.contactus{
-    margin-left: 22rem; 
-    margin-top: 10rem;
-}*/
-
-
-/* footer {
-    padding-bottom: 30px;
-    padding-top: 50px;
-
-}
-
-.footer1 {
-    display: flex;
-    justify-content: center;
-} */
-
-.footer {
+footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center; /* Center-align the content */
   }
 
-
-.column {
-    display: inline-block;
-    margin: 0 20px;
-    vertical-align: top;
-  }
-
-  .column h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .column p {
-    margin: 10px 0;
-  }
-
   .divider {
-    width: 1px;
+    width: 145px;
     background-color: #fff;
-    height: 150px; 
+    height: 1px; 
     display: inline-block;
-    margin: 0 20px;
   }
 
   .social-icons {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 3px;
   }
 
   .social-icon {
@@ -350,9 +205,16 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    background-color: black;
-    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    color: #333;
   }
+
+  .logofooter {
+    width: 60px;
+}
+
+
+  /*-------------------contact us-------------------*/
 
   .menuopen a {
     text-decoration: none;
@@ -362,6 +224,10 @@ h1 {
     font-size: 18px;
     border-radius:10px;
     margin-bottom: 15px;
+  }
+
+  .contactus {
+    padding-bottom: 100px;
   }
 
 .contactbutton {
@@ -377,7 +243,10 @@ h1 {
     border-radius: 10px;
 }
 
-
+.contactbutton:hover {
+    color:#333;
+    background-color:#ffffff;
+}
 
 .social-icons-contact{
     color: #333;
@@ -395,10 +264,38 @@ h1 {
     font-size: 2rem;
     font-weight: bold;
     padding-top: 4rem;
+    line-height: 60px;
 }
 
 .contact-email {
     font-weight: bold;
     font-size: 2rem;
     padding-top: 4rem;
+    line-height: 60px;
 }
+
+.p2 {
+    padding-bottom: 20px;
+}
+
+/*-----------------------------about page-----------------------------*/
+
+.imgshowcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+.studio1 {
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.showcase-title {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
