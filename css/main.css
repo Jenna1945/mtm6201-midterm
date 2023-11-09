@@ -171,6 +171,7 @@ li {
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    font-size: 17px;
     /* border-left: 1px solid rgb(255, 255, 255); */
     
 } 
@@ -227,7 +228,7 @@ h1 {
     padding: 1rem;
 }
 
-h2 {
+.studio-title {
     font-weight: bold;
     font-size: 2rem;
     padding-top: 4rem;
@@ -246,9 +247,10 @@ h2 {
 
 .pv1 {
     padding-bottom: 5rem;
+    font-size: 16px;
 }
 
-h3 {
+.bookings-title {
     font-weight: bold;
     font-size: 2rem;
     padding-top: 70px;
@@ -260,18 +262,21 @@ h3 {
     margin-bottom: 2rem;
     font-size: 1.1rem;
     min-width: 90%;
+    font-size: 16;
 }
 
 .content-table thead tr,
 .content-table td{
     text-align: center;
     border: 1px solid #222;
+    font-size: 16px;
 }
 
 .content-table th,
 .content-table td {
     padding: 12px;
     border-left: 1px solid #222;
+    font-size: 16px;
 }
 
 .content-table tbody tr {
@@ -287,21 +292,6 @@ h3 {
     margin-top: 10rem;
 }*/
 
-.contactbox {
-    font-size: 18px;
-}
-
-.contactbutton {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1.2rem;
-    color:#ffffff;
-    background-color:#333;
-}
 
 /* footer {
     padding-bottom: 30px;
@@ -367,3 +357,48 @@ h3 {
   .menuopen a {
     text-decoration: none;
   }
+
+  .contactbox {
+    font-size: 18px;
+    border-radius:10px;
+    margin-bottom: 15px;
+  }
+
+.contactbutton {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    color:#ffffff;
+    background-color:#333;
+    border-radius: 10px;
+}
+
+
+
+.social-icons-contact{
+    color: #333;
+    font-size: 40px;
+    
+}
+
+.form{
+    float: left;
+    font-size: 15px;
+    padding-right: 100px;
+}
+
+.contact-socials {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 4rem;
+}
+
+.contact-email {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 4rem;
+}
