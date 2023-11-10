@@ -10,25 +10,26 @@
 
 <body>
 
-    <main>
+  
+    <main role="main">
 
         <!-- ----------------- nav bar elements ----------------- -->
-        <header class="wrapper">
+        <header role="banner" class="wrapper">
 
             <div>
                 <img src="../images/cameralogo.png" class="logo" alt="Noki INC. Logo">
             </div>
 
-            <nav class="menu">
+            <nav role="navigation" class="menu">
 
-                    <div class="menuopen">
-                        <li><a href="./index.html">H O M E</a></li>
+                    <ul class="menuopen">
+                        <li><a href="./index.html" aria-label="Home Page Section">H O M E</a></li>
                         <div class="line"></div>
-                        <li><a href="./about.html">A B O U T</a></li>
+                        <li><a href="./about.html" aria-label="About Page Section">A B O U T</a></li>
                         <div class="line"></div>
-                        <li><a href="./contact.html">C O N T A C T</a></li>
+                        <li><a href="./contact.html" aria-label="Contact Page Section">C O N T A C T</a></li>
                         
-                    </div>                
+                    </ul>                
             </nav>
         </header>
 
@@ -36,16 +37,18 @@
         <!-- ------------------ banner elements ----------------- -->
 
         <!-- div with a class of banner used to display background image with text over -->
+        
+        <div class="container"> 
             <div class="banner">
                 <div class="banner-text">
-                    <h1>NOKI  INC.</h1>
-                </div>
-
-        </div>
+                    <h1 role="heading">NOKI  INC.</h1>
+            </div>
+            </div>
+        </div> 
         <!-- div with a class of wrapper1 to contain the pages contents -->
         <div class="wrapper1">
             <!-- div with class of ourstudio used to display elements inline -->
-            <div class="ourstudio">
+          <div class="ourstudio">
                 <img src="../images/plantstudio.jpg" class="plantstudio" alt="Our Studio">
                 <div class="studio-title">
                     <h2>OUR STUDIO</h2>
@@ -57,11 +60,11 @@
                 consequat. Duis aute irure dolor in reprehenderit in
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
-            </div>
+            </div> <!--our studio ends here-->
 
             <div class="bookings-title">
                 <h3>B O O K I N G S</h3>
-            </div>
+            </div> 
 
             <!-- ------------------- table elements ------------------ -->
 
@@ -132,7 +135,7 @@
             </table>
 
             <!-- ------------------ footer elements ------------------ -->
-            <footer>
+            <footer role="contentinfo">
             
                 <div class="follow-us">
                     <div class="divider"></div>
@@ -150,12 +153,12 @@
             
             
               <div class="copyright">
-                &copy; 1999 NOKI INC.
+                &copy; 1999 NOKI INC.</div>
             </footer>
           
         </div>
 
     </main>
-    
+
 </body>
 </html>
