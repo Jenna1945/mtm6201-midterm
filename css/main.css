@@ -97,7 +97,7 @@ a:hover{
 
 .banner {
     width: 100%;
-    height: 18vh;
+    height: 170px;
     background-image: url(../images/bannerstudio.jpg);
 }
 
@@ -379,7 +379,7 @@ footer {
     
     .banner {
         width: 100%;
-        height: 27vh;
+        height: 190px;
         background-image: url(../images/bannerstudio.jpg);
     }
     
@@ -504,6 +504,7 @@ footer {
     
       .menuopen a {
         text-decoration: none;
+        color: #fff;
       }
 
       .contactheader {
