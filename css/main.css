@@ -51,7 +51,7 @@ body {
     float: left;
 }
 
-.logo:active{
+.logo:hover{
     transition: all 1s;
     transform: rotateZ(360deg);
         transform: rotateZ(360deg);
@@ -214,7 +214,7 @@ footer {
     margin: 0 5px;
   }
 
-  .social-icon:active{
+  .social-icon:hover{
     transition: all .5s;
     transform : translateY(4px);
 }
