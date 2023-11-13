@@ -11,9 +11,11 @@
     <main role="main">
         <header role="banner" class="wrapper">
 
-            <div>
-                <img src="./images/cameralogo.png" class="logo" alt="Noki INC. Logo">
-            </div>
+            <picture>
+                <source srcset="./images/cameralogo-80-x-70.png" class="logo" media="(max-width: 800px)">
+                <source srcset="./images/cameralogo-110-x-96.png" class="logo" media="(min-width: 800px)">
+                <img src="./images/cameralogo-110-x-96.png" class="logo" alt="our logo" aria-label="our logo" >
+            </picture>
 
             <nav role="navigation" class="menu">
 
@@ -92,7 +94,11 @@
                   <div class="divider"></div>
                 </div>
 
-                <img src="./images/cameralogo.png" class="logofooter" alt="Our LOGO">   
+                <picture>
+                    <source srcset="./images/cameralogo-80-x-70.png" class="logofooter" media="(max-width: 800px)">
+                    <source srcset="./images/cameralogo-110-x-96.png" class="logofooter" media="(min-width: 800px)">
+                    <img src="./images/cameralogo-110-x-96.png" class="logofooter" alt="our logo" aria-label="our logo" >
+                </picture>  
             
             
               <div class="copyright">

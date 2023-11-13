@@ -11,9 +11,11 @@
     <main role="main">
         <header role="banner" class="wrapper">
 
-            <div>
-                <img src="./images/cameralogo.png" class="logo" alt="Noki INC. Logo">
-            </div>
+            <picture>
+                <source srcset="./images/cameralogo-80-x-70.png" class="logo" media="(max-width: 800px)">
+                <source srcset="./images/cameralogo-110-x-96.png" class="logo" media="(min-width: 800px)">
+                <img src="./images/cameralogo-110-x-96.png" class="logo" alt="our logo" aria-label="our logo" >
+            </picture>
 
             <nav role="navigation" class="menu">
 
@@ -42,27 +44,41 @@
         <div class="wrapper1">
             <div class="imgshowcase">
                     <div class="img-1">
-                    <img src="./images/photographystudio1.jpg" class="studio1" alt="photography studio"/>
-                    <h2 class="showcase-title">WHO WE ARE</h2>
-                    <p class="p4">Lorem ipsum dolor sit amet,
+                        <picture>
+                            <source srcset="./images/photographystudio1-750-x-500.jpg" class="studio1" media="(max-width: 800px)">
+                            <source srcset="./images/photographystudio1-1000-x-667.jpg" class="studio1" media="(min-width: 800px)">
+                            <img src="./images/photographystudio1-1000-x-667.jpg" class="studio1" alt="photography studio" aria-label="a photo in our studio" >
+                        </picture>
+    
+                        <h2 class="showcase-title">WHO WE ARE</h2>
+                        <p class="p4">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </p>
+                        </p>
                     </div>
 
                     <div class="img-2">
-                    <img src="./images/photographystudio2.jpg" class="studio1" alt="photography shoot"/>
-                    <h2 class="showcase-title">OUR VALUES</h2>
-                    <p class="p4">Lorem ipsum dolor sit amet,
+                        <picture>
+                            <source srcset="./images/photographystudio2-750-x-500.jpg" class="studio1" media="(max-width: 800px)">
+                            <source srcset="./images/photographystudio2-1000-x-667.jpg" class="studio1" media="(min-width: 800px)">
+                            <img src="./images/photographystudio2-1000-x-667.jpg" class="studio1" alt="photography shoot" aria-label="photography sessions photo" >
+                        </picture>
+                        <h2 class="showcase-title">OUR VALUES</h2>
+                        <p class="p4">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </p>
+                        </p>
                     </div>
 
                     <div class="img-3">
-                    <img src="./images/photographystudio3.jpg" class="studio1" alt="camera"/>
+                        <picture>
+                            <source srcset="./images/photographystudio3-750-x-500.jpg" class="studio1" media="(max-width: 800px)">
+                            <source srcset="./images/photographystudio3-1000-x-667.jpg" class="studio1" media="(min-width: 800px)">
+                            <img src="./images/photographystudio3-1000-x-667.jpg" class="studio1" alt="camera" aria-label="photo of our cameras" >
+                        </picture>
+<!--                     <img src="./images/photographystudio3.jpg" class="studio1" alt="camera"/> -->
                     <h2 class="showcase-title">OUR PROMISE</h2>
                     <p class="p4">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
@@ -86,7 +102,11 @@
                   <div class="divider"></div>
                 </div>
 
-                <img src="./images/cameralogo.png" class="logofooter" alt="Our LOGO">   
+                <picture>
+                    <source srcset="./images/cameralogo-80-x-70.png" class="logofooter" media="(max-width: 800px)">
+                    <source srcset="./images/cameralogo-110-x-96.png" class="logofooter" media="(min-width: 800px)">
+                    <img src="./images/cameralogo-110-x-96.png" class="logofooter" alt="our logo" aria-label="our logo" >
+                </picture>  
             
             
               <div class="copyright">
@@ -94,6 +114,6 @@
             </footer>
         </div>
 
-    
-</body>
+    </main>
+    </body>
 </html>
