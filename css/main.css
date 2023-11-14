@@ -24,7 +24,7 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
-/* --------------------------------------------------------------- */
+/* -------------------- ALL MOBILE CSS BELOW --------------------------- */
 
 
 /* adds background image for entire website and fonts */
@@ -38,6 +38,8 @@ body {
 }
 
 /*----------------------- nav bar -----------------------*/
+
+/* menu with display of grid and column to allow for desired alignment */
 .menu {
      display: grid;
      grid-auto-flow: column;
@@ -45,12 +47,13 @@ body {
     background-color: #333;
 }
 
-
+/* logo with property float left to allow nav bar to be left of logo */
 .logo {
     width: 67px;
     float: left;
 }
 
+/* adds 360 spin transitions to logo in top corner */
 .logo:hover{
     transition: all 1s;
     transform: rotateZ(360deg);
@@ -95,6 +98,7 @@ a:hover{
 
 /*------------------ banner with title and image -----------------*/
 
+/* container used for banner elements */
 .container {
     width: 100%;
     height: 10vh;
@@ -121,7 +125,6 @@ h1 {
 /* --------------- main wrapper with pages content -------------------*/
 
 .wrapper1 {
-   /*  max-width: 850px; */
     margin: 5rem auto 0;
     background: rgba(255, 255, 255, 0.6);
     padding: 1rem;
@@ -158,14 +161,13 @@ h1 {
 
 /*-------------------- table customizations ---------------------*/
 
-
+/* adds border to table */
 .content-table {
     border-collapse: collapse;
     margin-top: 20px;
     margin-bottom: 2rem;
     font-size: 1.1rem;
     min-width: 100%;
-    font-size: 16;
 }
 
 .content-table thead tr,
@@ -195,12 +197,14 @@ footer {
     text-align: center; /* center-aligns the content in the footer */
   }
 
+/*   line divider in footer */
   .divider {
     width: 145px;
     background-color: #fff;
     height: 1px; 
     display: inline-block;
   }
+
 
   .social-icons {
     display: flex;
@@ -235,7 +239,8 @@ footer {
 
   /*-------------------contact us page-------------------*/
 
-  .menuopen a {
+/*   removes underline on nav bar links */  
+.menuopen a {
     text-decoration: none;
   }
 
@@ -249,24 +254,7 @@ footer {
     padding-bottom: 100px;
   }
 
-/* .contactbutton {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1.2rem;
-    color:#ffffff;
-    background-color:#333;
-    border-radius: 10px;
-}
-
-.contactbutton:hover {
-    color:#333;
-    background-color:#ffffff;
-} */
-
+  /* ----------- contact button animations ------------- */
 .contactbutton {
     width: 220px;
     height: 50px;
@@ -357,8 +345,8 @@ footer {
     line-height: 60px;
 }
 
-.p2 {
-    padding-bottom: 20px;
+.emailcontact {
+    display: grid;
 }
 
 /*-----------------------------about page-----------------------------*/
@@ -383,7 +371,7 @@ footer {
 }
 
 
-
+/* ------------ ALL DESKTOP CSS BELOW ------------ */
 @media screen and (min-width: 760px) {
     /* adds background image for entire website and fonts */
     body {
@@ -409,6 +397,7 @@ footer {
         float: left;
     }
 
+    /* makes logo spin 360 on hover */
     .logo:hover{
         transition: all 1s;
         transform: rotateZ(360deg);
@@ -520,7 +509,6 @@ footer {
         margin-bottom: 2rem;
         font-size: 1.1rem;
         min-width: 90%;
-        font-size: 16;
     }
     
     .content-table thead tr,
@@ -608,6 +596,11 @@ footer {
         padding-bottom: 100px;
       }
 
+    .emailcontact {
+        display: grid;
+    }
+
+/* -------------- contact button animations ------------ */
     .contactbutton {
         width: 220px;
         height: 50px;
@@ -678,6 +671,7 @@ footer {
         
     }
     
+    /* contact form with float left to allow social and email to be beside it */
     .form{
         float: left;
         font-size: 15px;
@@ -711,7 +705,6 @@ footer {
         justify-content: center;
         padding-bottom: 50px;
     }
-    
     
     .studio1 {
         width: 250px;
