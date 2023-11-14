@@ -72,14 +72,6 @@ li {
     font-size: 16px;
 } 
 
-/*adds line dividers between nav bar links*/
-.line{
-    width: 1px;
-    display: inline-block;
-    background-color: #fff;
-    height: 20px;
-}
-
 .a:link {
     color: #636363;
     text-decoration: none;
@@ -239,6 +231,10 @@ footer {
 
   /*-------------------contact us page-------------------*/
 
+  .contactheader {
+    font-size: 52px;
+}
+
 /*   removes underline on nav bar links */  
 .menuopen a {
     text-decoration: none;
@@ -366,10 +362,22 @@ footer {
     padding-bottom: 40px;
 }
 
-/*----------------------- contact page --------------------------*/
-
-.contactheader {
-    font-size: 52px;
+/* ----------- skip links ---------- */
+.skip-link {  
+    position: absolute;
+    top: -30px;
+    text-decoration: none;
+    overflow: hidden;
+}
+  
+.skip-link:focus {
+    top: auto;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #e0e0e0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 
 
@@ -417,14 +425,6 @@ footer {
         padding-right: 40px;
         font-size: 17px;
     } 
-    
-    /*adds line dividers between nav bar links*/
-    .line{
-        width: 1px;
-        display: inline-block;
-        background-color: #fff;
-        height: 20px;
-    }
     
     .a:link {
         color: #636363;
@@ -720,13 +720,14 @@ footer {
 
    /*  --------------- skip link --------------- */
     .skip-link {
+        
         position: absolute;
         top: -30px;
         text-decoration: none;
         overflow: hidden;
-      }
+    }
       
-      .skip-link:focus {
+    .skip-link:focus {
         top: auto;
         overflow: visible;
         padding: 10px;
@@ -734,5 +735,5 @@ footer {
         color: black;
         text-align: center;
         text-decoration: none;
-      }
+    }
 }
