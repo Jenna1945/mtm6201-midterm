@@ -29,58 +29,60 @@
             </nav>
         </header>
 
-
-        <!-- all banner elements contained in div with class of container -->
-        <div class="container">
-            <div class="banner">
-                <div class="banner-text">
-                    <h1 role="heading" class="contactheader">C O N T A C T</h1>
+        <section class="mainbanner">
+            <!-- all banner elements contained in div with class of container -->
+            <div class="container">
+                <div class="banner">
+                    <div class="banner-text">
+                        <h1 role="heading" class="contactheader">C O N T A C T</h1>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
         <!-- div with a class of wrapper1 to contain the pages contents -->
         <div class="wrapper1">
 
+            <section class="contact-content">
+                <div role="form" class="contactus" id="contactus">
+                    <!-- uses div with class of form to create contact form -->
+                    <div class="form">
+                    <div>FIRST NAME*</div>
+                    <textarea class="contactbox" rows="1" cols="33"></textarea>
+                    <div>LAST NAME</div>
+                    <textarea class="contactbox" rows="1" cols="33"></textarea>
+                    <div>EMAIL*</div>
+                    <textarea class="contactbox" rows="1" cols="33"></textarea>
+                    <div>MESSAGE*</div>
+                    <textarea class="contactbox" rows="5" cols="33"></textarea>
 
-            <div role="form" class="contactus" id="contactus">
-                <!-- uses div with class of form to create contact form -->
-                <div class="form">
-                <div>FIRST NAME*</div>
-                <textarea class="contactbox" rows="1" cols="33"></textarea>
-                <div>LAST NAME</div>
-                <textarea class="contactbox" rows="1" cols="33"></textarea>
-                <div>EMAIL*</div>
-                <textarea class="contactbox" rows="1" cols="33"></textarea>
-                <div>MESSAGE*</div>
-                <textarea class="contactbox" rows="5" cols="33"></textarea>
-
-                <p class="message"></p>
+                    <p class="message"></p>
 
 
-                <button type="button" class="contactbutton">Send</button>
+                    <button type="button" class="contactbutton">Send</button>
+                        </div>
+
+                    <div class="contact-socials">
+                        <h2>S O C I A L S</h2>
+                    </div>
+
+                    <div class="social-icons-contact">
+                        <i class="social-icon1 fab fa-facebook"></i>
+                        <i class="social-icon1 fab fa-twitter"></i>
+                        <i class="social-icon1 fab fa-youtube"></i>
+                        <i class="social-icon1 fab fa-instagram"></i>
+                    </div>
+
+                    <div class="contact-email">
+                        <h3>E M A I L</h3>
+                    </div>
+
+                    <div class="emailcontact" itemscope itemtype="https://schema.org/ContactPoint">
+                        <span itemprop="email">company.name@domain.com</span>     
+                        <span itemprop="telephone">TEL: 888-888-8888</span>
+                    </div>
                 </div>
-
-                <div class="contact-socials">
-                    <h2>S O C I A L S</h2>
-                </div>
-
-                <div class="social-icons-contact">
-                    <i class="social-icon1 fab fa-facebook"></i>
-                    <i class="social-icon1 fab fa-twitter"></i>
-                    <i class="social-icon1 fab fa-youtube"></i>
-                    <i class="social-icon1 fab fa-instagram"></i>
-                </div>
-
-                <div class="contact-email">
-                    <h3>E M A I L</h3>
-                </div>
-
-                <div class="emailcontact" itemscope itemtype="https://schema.org/ContactPoint">
-                    <span itemprop="email">company.name@domain.com</span>     
-                    <span itemprop="telephone">TEL: 888-888-8888</span>
-                </div>
-            </div>
+            </section>
 
             <!-- all footer elements -->
             <footer role="contentinfo">
