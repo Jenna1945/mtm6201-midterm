@@ -715,4 +715,22 @@ footer {
         font-size: 22px;
         padding-bottom: 10px;
     }
+
+   /*  --------------- skip link --------------- */
+    .skip-link {
+        position: absolute;
+        top: -30px;
+        text-decoration: none;
+        overflow: hidden;
+      }
+      
+      .skip-link:focus {
+        top: auto;
+        overflow: visible;
+        padding: 10px;
+        background-color: #e0e0e0;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+      }
 }
